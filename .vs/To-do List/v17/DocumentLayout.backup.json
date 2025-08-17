@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\C# Projects\\To-do List\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A647E8CB-6C1D-4304-8F71-EB962CB0BA1C}|To-do List\\To-do List.csproj|e:\\c# projects\\to-do list\\to-do list\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A647E8CB-6C1D-4304-8F71-EB962CB0BA1C}|To-do List\\To-do List.csproj|solutionrelative:to-do list\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\C# Projects\\To-do List\\To-do List\\Program.cs",
+              "RelativeDocumentMoniker": "To-do List\\Program.cs",
+              "ToolTip": "E:\\C# Projects\\To-do List\\To-do List\\Program.cs",
+              "RelativeToolTip": "To-do List\\Program.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACcAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T15:23:36.946Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
