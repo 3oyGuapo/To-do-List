@@ -1,4 +1,6 @@
-﻿List<string> todoList = new List<string>();
+﻿//
+const string filePath = "To-do List.txt";
+List<string> todoList = LoadListsFromFile();
 
 Console.WriteLine("Welcome to your to-do list!");
 
@@ -38,6 +40,7 @@ while (true)
             {
                 Console.WriteLine("What are your new list content?");
                 todoList[updateIndex] = Console.ReadLine();
+                SaveListsToFile(todoList);
             }
             DisplayList(todoList);
             Console.ReadKey();
@@ -48,6 +51,7 @@ while (true)
             if (int.TryParse(Console.ReadLine(), out removeIndex) && (removeIndex - 1 >= 0 && removeIndex - 1 < todoList.Count()))
             {
                 todoList.RemoveAt(removeIndex - 1);
+                SaveListsToFile(todoList);
                 Console.WriteLine("Your chosen list has been successfully removed.");
             }
             else
@@ -62,6 +66,7 @@ while (true)
             if (Console.ReadLine().ToUpper() == "Y")
             {
                 todoList.Clear();
+                SaveListsToFile(todoList);
                 Console.WriteLine("Your list has all been deleted!");
             }
             else
@@ -121,4 +126,23 @@ static bool GetTargetListIndex(List<string> todoList, out int index)
 
     Console.WriteLine("Invalid number! Please input a valid number.");
     return false;
+}
+
+static void SaveListsToFile(List<string> todoList)
+{
+    File.WriteAllLines(filePath, todoList);
+}
+
+static List<string> LoadListsFromFile()
+{
+    if (File.Exists(filePath))
+    {
+        string[] tempLists = File.ReadAllLines(filePath);
+        return new List<string>(tempLists);
+    }
+
+    else
+    {
+        return new List<string>();
+    }
 }
