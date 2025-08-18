@@ -30,6 +30,7 @@ while (true)
         case 1:
             Console.WriteLine("Please type your list to add into the list:");
             todoList.Add(Console.ReadLine());
+            SaveListsToFile(todoList);
             DisplayList(todoList);
             break;
         case 2:
