@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:To_do_List_Desktop"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        Closing="MainWindow_Closing">
+        
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
@@ -16,7 +18,7 @@
         </Grid.RowDefinitions>
 
         <TextBlock Grid.Row="0" Text="To-do List" FontWeight="Bold" Margin="0,0,0,5" />
-        <ListBox x:Name="todoListBox" Grid.Row="1" Margin="0,0,0,10" ItemsSource="{Binding TodoList}" SelectedItem="{Binding SelectedList, Mode=TwoWay}">
+        <ListBox x:Name="todoListBox" Grid.Row="1" Margin="0,0,0,10" ItemsSource="{Binding Lists}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
